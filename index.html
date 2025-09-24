@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Tong Cai — Homepage</title>
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="Personal homepage and portfolio of Tong Cai."
+    />
+    <meta name="author" content="Tong Cai" />
+
+    <!-- Favicon / icons -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" href="./images/icon-180.png" />
+
+    <!-- Open Graph (nice when you deploy) -->
+    <meta property="og:title" content="Tong Cai — Homepage" />
+    <meta property="og:description" content="Projects, writing, and contact." />
+    <meta property="og:image" content="./images/og-card.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- Accessibility: jump to main content -->
+    <link rel="stylesheet" href="./css/skiplink.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="nav__brand" href="index.html">Tong Cai</a>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#original">Original</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+          <li><a class="nav__link" href="ai.html">AI Page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Intro -->
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <h1 id="hero-title" class="hero__title">Hi there, I'm Tong.</h1>
+          <p class="hero__subtitle">
+            I am an aspiring software engineer and MS in Computer Science
+            candidate at Northeastern University, with a strong foundation in
+            full-stack development, system design, and data-driven problem
+            solving. My technical expertise spans Java, Python, TypeScript, and
+            C#, complemented by a finance background that sharpens my ability to
+            align technology solutions with business needs. At Ticker, I led
+            backend and mobile initiatives in a fast-paced startup environment,
+            building scalable services with Spring Boot and MongoDB and shipping
+            reusable components in React Native. I containerized services with
+            Docker and deployed them on Kubernetes (managed via Helm), enabling
+            rolling updates and horizontal scaling. I also introduced Redis for
+            caching and session/state management to reduce latency, and paired
+            it with message queues (e.g., RabbitMQ) for reliable, asynchronous
+            workflows across the system.
+          </p>
+          <p class="hero__cta">
+            <a class="btn btn--primary" href="#projects">See Projects</a>
+          </p>
+        </div>
+        <figure class="hero__figure">
+          <img
+            class="hero__img"
+            src="./images/profile.jpg"
+            alt="Portrait of Tong Cai"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </section>
+
+      <!-- Projects -->
+      <section
+        class="section container"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <h2 id="projects-title" class="section__title">Projects</h2>
+        <ul class="grid grid--cards" id="projects-list">
+          <li class="card">
+            <img
+              class="card__img"
+              src="./images/project1.png"
+              alt="Screenshot of Project 1"
+            />
+            <div class="card__body">
+              <h3 class="card__title">Project 1</h3>
+              <p class="card__text">Fallback.</p>
+              <a class="btn btn--link" href="#" aria-label="Open Project 1"
+                >Open</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- My Skills -->
+      <section
+        class="section container"
+        id="skills"
+        aria-labelledby="skills-title"
+      >
+        <h2 id="skills-title" class="section__title">Skills & Technologies</h2>
+        <p class="section__lede">
+          A grid of programming languages, frameworks, and tools I've worked
+          with.
+        </p>
+
+        <div class="grid grid--cards">
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              alt="Java logo"
+            />
+            <h3>Java</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="Python logo"
+            />
+            <h3>Python</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React logo"
+            />
+            <h3>React</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+              alt="Spring Boot Logo"
+            />
+            <h3>Spring Boot</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript Logo"
+            />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="Node logo"
+            />
+            <h3>Node</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <button id="back-to-top" aria-label="Back to top">Back to Top</button>
+    <footer class="site-footer">
+      <div class="container">
+        <small> © <span id="year"></span> Tong Cai. MIT License. </small>
+      </div>
+    </footer>
+
+    <!-- ES6 entry point -->
+    <script type="module" src="./js/main.js"></script>
+
+    <!-- No-JS message -->
+    <noscript>
+      <p style="padding: 1rem" aria-live="polite">
+        JavaScript is disabled. Basic content is visible but some features may
+        not work.
+      </p>
+    </noscript>
+
+  </body>
+ 
+</html>

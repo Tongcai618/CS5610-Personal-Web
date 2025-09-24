@@ -1,0 +1,183 @@
+/* ========== Base Reset & Typography ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background-color: #fff;
+}
+
+/* ========== Reusable Layout Helpers ========== */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section__title {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== Navigation ========== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__toggle {
+  display: none;
+}
+
+/* ========== Hero Section ========== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+  margin-bottom: 1rem;
+  max-width: 480px;
+}
+
+.hero__img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn--primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn--secondary {
+  background: #eee;
+  color: #222;
+}
+
+.btn--link {
+  background: none;
+  color: #007bff;
+  padding: 0;
+}
+
+/* ========== Grid / Cards ========== */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid--cards {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+/* ========== Honeycomb Example ========== */
+.honeycomb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.honeycomb__cell {
+  width: 150px;
+  height: 130px;
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%);
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.honeycomb__cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== Footer ========== */
+.site-footer {
+  padding: 1rem;
+  background: #f5f5f5;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+
+#back-to-top:hover {
+  background: #0056b3;
+}
