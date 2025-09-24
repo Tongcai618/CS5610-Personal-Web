@@ -20,6 +20,9 @@ It also demonstrates good coding practices, accessibility, responsive design, an
 
 ![Homepage Screenshot](./images/screenshot.png)
 
+## Introduction demo
+[Slides](https://docs.google.com/presentation/d/1ZpArRNoZ8-75VvdyHZtsqScBrhjaVmNOKXIN5InYAf0/edit?usp=sharing)
+
 ## Instructions to Build / Run
 
 1. Clone or download this repository.
