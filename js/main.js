@@ -5,6 +5,7 @@ import { initCustomFeature } from "./customComponent.js";
 import { initBackToTop } from "./backToTop.js";
 
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("Hello World")
   initNav();
   initThemeToggle();
   renderProjects();
